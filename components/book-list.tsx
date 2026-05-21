@@ -34,14 +34,10 @@ export function BookList({ books, onRead }: BookListProps) {
             <p className="text-gray-600 text-sm mb-3 line-clamp-2 flex-1">
               {book.bookDesc}
             </p>
-            <Button
-              onClick={() => onRead(book)}
-              size="sm"
-              className="bg-gray-900 hover:bg-gray-800 text-white w-fit flex items-center gap-2"
-            >
+            <a href={book.bookReadLink}>
               <BookOpen className="w-4 h-4" />
               Read Book
-            </Button>
+            </a>
           </div>
         </div>
       ))}
