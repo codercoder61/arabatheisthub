@@ -34,9 +34,11 @@ export function BookList({ books, onRead }: BookListProps) {
             <p className="text-gray-600 text-sm mb-3 line-clamp-2 flex-1">
               {book.bookDesc}
             </p>
-            <a href={book.bookReadLink}>
+            <a href={book.bookReadLink}><Button
+          className="w-full bg-gray-900 hover:bg-gray-800 text-white flex items-center justify-center gap-2"
+        >
               <BookOpen className="w-4 h-4" />
-              Read Book
+              Read Book</Button>
             </a>
           </div>
         </div>
